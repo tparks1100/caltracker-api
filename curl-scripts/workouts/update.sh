@@ -13,7 +13,8 @@ curl "${API}${URL_PATH}/${ID}" \
     "workoutCategory": "'"${WORKOUTCATEGORY}"'",
     "targetedBodyArea": "'"${TARGETEDBODYAREA}"'",
     "timeSpent": "'"${TIMESPENT}"'",
-    "caloriesBurned": "'"${CALORIESBURNED}"'"
+    "caloriesBurned": "'"${CALORIESBURNED}"'",
+    "workoutDate": "'"${WORKOUTDATE}"'"
     }
   }'
 

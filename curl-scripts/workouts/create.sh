@@ -14,7 +14,7 @@ curl "${API}${URL_PATH}" \
       "targetedBodyArea": "'"${TARGETEDBODYAREA}"'",
       "timeSpent": "'"${TIMESPENT}"'",
       "caloriesBurned": "'"${CALORIESBURNED}"'",
-      "workoutDate": "'"${WORKOUTDATE}"'",
+      "workoutDate": "'"${WORKOUTDATE}"'"
     }
   }'
 
