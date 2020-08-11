@@ -1,41 +1,43 @@
 # CalTracker API
 
-This application allows the user to do x, y, and z. Maybe here's a reason why I
-wanted to do this project, or came up with this idea.
+This API stores information on the user and a resource, resource being workouts. It allows users to register as users of the API and add, delete & edit workouts.
 
-## Important Links
+## API URL
 
-- [Other Repo](www.link.com)
-- [Deployed API](www.link.com)
-- [Deployed Client](www.link.com)
+```js
+  production: 'https://secret-woodland-45312.herokuapp.com',
+  development: 'http://localhost:4741'
+```
 
-## Planning Story
+## API End Points
 
-Lorem ipsum dolor amet cloud bread letterpress squid actually, single-origin
-coffee williamsburg af poutine fingerstache austin semiotics paleo man braid
-vexillologist. Tumeric literally banjo pickled disrupt cold-pressed thundercats
-shoreditch try-hard health goth intelligentsia pop-up small batch skateboard
-farm-to-table. Meh tofu fam, direct trade tattooed stumptown etsy everyday
-carry activated charcoal. Neutra cornhole polaroid literally salvia, listicle
-tofu.
+| Verb   | URI Pattern            | Controller#Action |
+|--------|------------------------|-------------------|
+| POST   | `/sign-up`             | `users#signup`    |
+| POST   | `/sign-in`             | `users#signin`    |
+| DELETE | `/sign-out`            | `users#signout`   |
+| PATCH  | `/change-password`     | `users#changepw`  |
+| GET    | `/workouts`            | `workouts#index`  |
+| POST   | `/workouts`            | `workouts#create` |
+| PATCH  | `/workouts/:id`        | `workouts#update` |
 
-### User Stories
+All data returned from API actions is formatted as JSON.
 
-- As a user I want to sign in/up
-- As a user I want to Create a new < resource >
-- As a user I want to Read multiple < resources >
-- As a user I want to Read a single < resource >
-- As a user I want to Update a < resource > I own
-- As a user I want to Delete a < resource > I own
+## API Routes
 
-### Technologies Used
+```md
+1. User routes
+2. Workout routes
+3. Meal routes
+```
 
-- jQuery
-- HTML/CSS
-- Bootstrap
-- Javascript
+## Resources & Attributes
 
-### Unsolved Problems
+Workouts will be my resources. Attributes can be seen in the ERD below
 
-- Still need to ....
-- Would like to eventually ....
+## API ERD
+
+![alt-text](https://i.imgur.com/Ds8Lkqp.png "Project 2: ERD")
+
+[Link to ERD](https://i.imgur.com/Ds8Lkqp.png)
+
